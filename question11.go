@@ -38,7 +38,8 @@ func main() {
 *main.Student
 <nil>
 BBBBBBB
-
-因为interface虽然看起来像指针，但并不是指针。interface变量仅在类型和值为“nil”时才为“nil”。
+内存示意：
+(*main.Student, nil)
+interface变量仅在类型和值为“nil”时才为“nil”。
 interface的类型和值会根据用于创建对应interface变量的类型和值的变化而变化。当你检查一个interface变量是否等于“nil”时，这就会导致未预期的行为。
 */
