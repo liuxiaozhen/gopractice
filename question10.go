@@ -21,10 +21,15 @@ func (stu *Stduent) Speak(think string) (talk string) {
 }
 
 func main() {
-	var peo People = Stduent{}
+	var peo People = &Stduent{}
 	think := "bitch"
 	fmt.Println(peo.Speak(think))
 }
 
 /**
- */
+Receiver & interface
+类型 *T 的可调用方法集包含接受者为 *T 或 T 的所有方法集
+类型 T 的可调用方法集包含接受者为 T 的所有方法
+
+var peo People = &Stduent{}
+*/
