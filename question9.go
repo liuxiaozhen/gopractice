@@ -23,6 +23,7 @@ func (set *threadSafeSet) Iter() <-chan interface{} {
 }
 
 /**
-。。。
+defer set.RUnlock()
+defer close(ch)
 *
 */
