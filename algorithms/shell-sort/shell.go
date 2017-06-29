@@ -2,9 +2,8 @@
 package main
 
 import (
+	"demo/utils"
 	"fmt"
-	"math/rand"
-	"time"
 )
 
 func Sort(arr []int) {
@@ -25,16 +24,7 @@ func Sort(arr []int) {
 }
 
 func main() {
-	arrs := getList(13)
+	arrs := utils.GetList(21)
 	Sort(arrs)
 	fmt.Println(arrs)
-}
-
-func getList(n int) []int {
-	r := rand.New(rand.NewSource(time.Now().UnixNano()))
-	arr := make([]int, n, n)
-	for i := 0; i < n; i++ {
-		arr[i] = r.Intn(n)
-	}
-	return arr
 }
