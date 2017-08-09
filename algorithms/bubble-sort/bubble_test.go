@@ -1,9 +1,10 @@
 package main
 
 import (
-	"demo/utils"
 	"fmt"
 	"testing"
+
+	"github.com/liuxiaozhen/gopractice/utils"
 )
 
 func TestBubbleSort(t *testing.T) {

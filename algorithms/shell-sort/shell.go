@@ -2,8 +2,9 @@
 package main
 
 import (
-	"demo/utils"
 	"fmt"
+
+	"github.com/liuxiaozhen/gopractice/utils"
 )
 
 func Sort(arr []int) {

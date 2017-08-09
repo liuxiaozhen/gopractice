@@ -3,8 +3,9 @@ package main
 //参考
 //https://github.com/arnauddri/algorithms/blob/master/algorithms/sorting/bubble-sort/bubble.go
 import (
-	"demo/utils"
 	"fmt"
+
+	"github.com/liuxiaozhen/gopractice/utils"
 )
 
 func Sort(arr []int) {
